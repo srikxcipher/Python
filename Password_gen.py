@@ -24,3 +24,35 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 #     passw += random.choice(numbers)
 #
 # print(passw)
+
+# Hard level
+passw_list = []
+
+range(1, )
+
+for char in range(0, nr_letters):
+    passw_list.append(random.choice(letters))
+
+for char in range(0, nr_symbols):
+    passw_list.append(random.choice(symbols))
+
+for char in range(0, nr_numbers):
+    passw_list.append(random.choice(numbers))
+
+print(passw_list)
+
+random.shuffle(passw_list)
+
+print(passw_list)
+
+password = ""
+
+for char in passw_list:
+    password += char
+
+print(f"Your password is: '{password}'")
+
+print("Length of the password is ,", len(password))
+
+
+
